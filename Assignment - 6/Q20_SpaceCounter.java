@@ -1,0 +1,20 @@
+import java.util.*;
+public class Q20_SpaceCounter {
+	public static int countSpaces(String str)
+	{
+		int c = 0;
+		for (int i = 0;i < str.length();i++)
+		{
+			if (str.charAt(i) == ' ')
+				c++;
+		}
+		return c;
+	}
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a string: ");
+		String s = sc.nextLine();
+		System.out.println("Number of spaces: "+countSpaces(s));
+	}
+}
